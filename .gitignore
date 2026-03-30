@@ -1,0 +1,41 @@
+- SEGURIDAD (CRÍTICO) ---
+# Ignora las credenciales locales y configuraciones sensibles
+.env
+.env.local
+.env.*
+local.env
+
+# --- Maven ---
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+
+
+# --- Log Files ---
+*.log
+logs/
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- Help & Temporales ---
+HELP.md
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings

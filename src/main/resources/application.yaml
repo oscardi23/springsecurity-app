@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: security
+  datasource:
+    url: '${DB_URL}'
+    username: '${DB_USER}'
+    password: '${DB_PASSWORD}'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 3600
+
+server:
+  port: 8090
+
+spring-doc:
+  api-docs:
+    version: OPENAPI_3_0
+
+logging:
+  level:
+    org.springframework.aop: DEBUG
+    org.springframework.web: DEBUG
