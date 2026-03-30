@@ -29,3 +29,33 @@ src/main/java/com/odiaz/security/
 ├── jwt/          # Lógica de filtros y utilidades de Token
 ├── repositories/ # Interfaces de acceso a datos
 └── services/     # Lógica de negocio e implementación
+
+Configuración Local
+Para correr este proyecto en tu entorno local, sigue estos pasos:
+
+Clonar el repositorio:
+
+Bash
+
+git clone [https://github.com/TU_USUARIO/securityspring-app.git](https://github.com/TU_USUARIO/securityspring-app.git)
+Configurar variables de entorno:
+Crea un archivo .env en la raíz del proyecto o configura las variables en tu IDE:
+
+DB_URL: URL de tu base de datos MySQL.
+
+DB_USER: Tu usuario de base de datos.
+
+DB_PASSWORD: Tu contraseña.
+
+JWT_SECRET: Una clave secreta segura de al menos 64 caracteres.
+
+Ejecutar con Maven:
+
+Bash
+
+./mvnw spring-boot:run
+📖 Documentación de la API
+Una vez que la aplicación esté corriendo, puedes acceder a la documentación interactiva en:
+http://localhost:8090/swagger-ui/index.html
+
+Desarrollado por Oscar Diaz
